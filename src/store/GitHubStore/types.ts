@@ -2,14 +2,14 @@ import { ApiResponse } from "../../shared/store/ApiStore/types";
 
 export type GetOrganizationReposListParams = {
   organizationName: string;
-}
+};
 
 export type GithubRepoOwner = {
   id: number;
   url: string;
   avatar_url: string;
   login: string;
-}
+};
 
 export type RepoItem = {
   id: number;
@@ -17,7 +17,7 @@ export type RepoItem = {
   name: string;
   stargazers_count: number;
   owner: GithubRepoOwner;
-}
+};
 
 /** Интерфейс класса для работы с GitHub API
  * названия getOrganizationReposList
@@ -27,5 +27,7 @@ export type RepoItem = {
  * Выберите любой запрос из публичного API GitHub.
  */
 export interface IGitHubStore {
-    getOrganizationReposList(params: GetOrganizationReposListParams): Promise<ApiResponse<RepoItem[], any>>;
+  getOrganizationReposList(
+    params: GetOrganizationReposListParams
+  ): Promise<ApiResponse<RepoItem[], any>>;
 }
