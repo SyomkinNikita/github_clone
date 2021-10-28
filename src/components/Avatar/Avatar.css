@@ -1,0 +1,7 @@
+.git-repo__avatar {
+  width: 80px;
+  height: 80px;
+
+  background: #ff5555;
+  border-radius: 40px;
+}

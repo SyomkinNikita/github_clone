@@ -6,8 +6,6 @@ export type ButtonProps = {
   children: React.ReactNode;
 };
 
-const Button: React.FC<ButtonProps> = ({ onClick, children }) => (
+export const Button: React.FC<ButtonProps> = ({ onClick, children }) => (
   <button onClick={onClick}>{children}</button>
 );
-
-export default Button;

@@ -1,4 +1,5 @@
 import React, { ChangeEvent, FC } from "react";
+import "./Input.css";
 
 export type InputProps = {
   value: string | number;
@@ -19,6 +20,7 @@ export const Input: FC<InputProps> = ({
       placeholder={placeholder}
       onChange={onChange}
       disabled={disabled}
+      className={"search__input"}
     />
   );
 };
